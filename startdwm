@@ -1,0 +1,5 @@
+#!/bin/sh
+sh ~/.xsession
+while true; do 
+    dwm 2> ~/.dwm.log
+done
