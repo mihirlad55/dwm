@@ -9,7 +9,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = False;     /* Switch view on tag switch */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 10;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "Roboto:size=10" };
+static const char *fonts[]          = { "Roboto:size=10", "FontAwesome:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]       = "#222222";
 static char normbordercolor[]       = "#444444";
@@ -28,7 +28,7 @@ static char *colors[][3]      = {
 static const char *xres = "/home/mihirlad55/.Xresources";
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", "", "", "4", "5", "6", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -37,9 +37,9 @@ static const Rule rules[] = {
 	 */
 	/* class        instance    title       tags mask     isfloating   monitor */
     { "Station",    NULL,       NULL,       1 << 6,       0,           1 },
-    { "Slack",      NULL,       NULL,       1 << 8,       0,           1 },
-    { "discord",    NULL,       NULL,       1 << 8,       0,           1 },
-    { "spotify",    NULL,       NULL,       1 << 5,       0,           1 },
+    { "Slack",      NULL,       NULL,       1 << 9,       0,           1 },
+    { "discord",    NULL,       NULL,       1 << 9,       0,           1 },
+    { "spotify",    NULL,       NULL,       1 << 8,       0,           1 },
     { "Mailspring", NULL,       NULL,       1 << 7,       0,           1 },
 };
 
@@ -97,8 +97,8 @@ static Key keys[] = {
 //	{ MODKEY,                       XK_space,  setlayout,      {0} },
 	{ MODKEY|ShiftMask,             XK_space,  togglefloating, {0} },
 	{ MODKEY,                       XK_s,      togglesticky,   {0} },
-	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
-	{ MODKEY|ShiftMask,             XK_0,      tag,            {.ui = ~0 } },
+	{ MODKEY,                       XK_Tab,    view,           {.ui = ~0 } },
+	{ MODKEY|ShiftMask,             XK_Tab,    tag,            {.ui = ~0 } },
 	{ MODKEY|ControlMask,           XK_j,      focusmon,       {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_k,      focusmon,       {.i = +1 } },
 	{ MODKEY|ControlMask|ShiftMask, XK_j,      tagmon,         {.i = -1 } },
@@ -116,6 +116,7 @@ static Key keys[] = {
 	TAGKEYS(                        XK_7,                      6)
 	TAGKEYS(                        XK_8,                      7)
 	TAGKEYS(                        XK_9,                      8)
+    TAGKEYS(                        XK_0,                      9)
 	{ MODKEY|ControlMask|ShiftMask, XK_e,      quit,           {1} }, 
 };
 
