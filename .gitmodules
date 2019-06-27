@@ -1,0 +1,6 @@
+[submodule "dwm-xrdb"]
+	path = dwm-xrdb
+	url = git@github.com:JBlackN/dwm-xrdb
+[submodule "patches/dwm-xrdb"]
+	path = patches/dwm-xrdb
+	url = git@github.com:JBlackN/dwm-xrdb
