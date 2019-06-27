@@ -2,4 +2,6 @@
 sh ~/.xsession
 while true; do 
     dwm 2> ~/.dwm.log
+    # Reload polybar on top of dwm
+    pkill -USR1 polybar
 done
