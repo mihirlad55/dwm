@@ -9,7 +9,7 @@ static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = False;     /* Switch view on tag switch */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
 static const int vertpadbar         = 10;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "monospace:size=10" };
+static const char *fonts[]          = { "Roboto:size=10" };
 static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]       = "#222222";
 static char normbordercolor[]       = "#444444";
