@@ -28,7 +28,7 @@ static char *colors[][3]      = {
 static const char *xres = "/home/mihirlad55/.Xresources";
 
 /* tagging */
-static const char *tags[] = { "", "", "", "4", "5", "6", "", "", "", "" };
+static const char *tags[] = { "", "", "", "", "5", "6", "", "", "", "" };
 
 static const Rule rules[] = {
 	/* xprop(1):
