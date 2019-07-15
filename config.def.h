@@ -39,7 +39,7 @@ static const Rule rules[] = {
     { "Franz",      NULL,       NULL,       1 << 6,       0,           1 },
     { "Slack",      NULL,       NULL,       1 << 9,       0,           1 },
     { "discord",    NULL,       NULL,       1 << 9,       0,           1 },
-    { "spotify",    NULL,       NULL,       1 << 8,       0,           1 },
+    { "Spotify",    NULL,       NULL,       1 << 8,       0,           1 },
     { "Mailspring", NULL,       NULL,       1 << 7,       0,           1 },
     { "St",         NULL,       "vifm",     1 << 4,       0,           1 },
 };
