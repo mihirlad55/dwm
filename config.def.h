@@ -36,12 +36,12 @@ static const Rule rules[] = {
 	 *	WM_NAME(STRING) = title
 	 */
 	/* class        instance    title       tags mask     isfloating   monitor */
-    { "Franz",      NULL,       NULL,       1 << 6,       0,           1 },
-    { "Slack",      NULL,       NULL,       1 << 9,       0,           1 },
-    { "discord",    NULL,       NULL,       1 << 9,       0,           1 },
-    { "Spotify",    NULL,       NULL,       1 << 8,       0,           1 },
-    { "Mailspring", NULL,       NULL,       1 << 7,       0,           1 },
-    { "St",         NULL,       "vifm",     1 << 4,       0,           1 },
+    { "Franz",      NULL,       NULL,       1 << 6,       0,           0 },
+    { "Slack",      NULL,       NULL,       1 << 9,       0,           0 },
+    { "discord",    NULL,       NULL,       1 << 9,       0,           0 },
+    { "Spotify",    NULL,       NULL,       1 << 8,       0,           0 },
+    { "Mailspring", NULL,       NULL,       1 << 7,       0,           0 },
+    { "St",         NULL,       "vifm",     1 << 4,       0,           0 },
 };
 
 /* layout(s) */
