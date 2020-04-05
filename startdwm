@@ -1,7 +1,5 @@
 #!/bin/sh
 sh ~/.xsession
 while true; do 
-    # Reload polybar on top of dwm
-    st sh -c 'sleep 1 && pkill -USR1 polybar' &
     dwm 2> ~/.dwm.log
 done
