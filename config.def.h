@@ -8,8 +8,8 @@ static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const Bool viewontag         = False;     /* Switch view on tag switch */
 static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
-static const int vertpadbar         = 18;        /* vertical padding for statusbar */
-static const char *fonts[]          = { "Roboto:size=10",
+static const int vertpadbar         = 21;        /* vertical padding for statusbar */
+static const char *fonts[]          = { "Liberation Mono:size=9",
                                         "Material Icons:size=14" };
 static const char dmenufont[]       = "monospace:size=10";
 static char normbgcolor[]           = "#222222";
