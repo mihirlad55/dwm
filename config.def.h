@@ -26,7 +26,7 @@ static char *colors[][3] = {
 };
 
 /* Xresources file location */
-static const char *xres = "/home/mihirlad55/.Xresources";
+static const char *xres = "$HOME/.Xresources";
 
 /* tagging */
 static const char *tags[] = { "", "", "", "", "", "", "", "", "", "" };
