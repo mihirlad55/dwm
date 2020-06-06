@@ -42,7 +42,6 @@ static const Rule rules[] = {
     { "discord",    NULL,       NULL,       1 << 9,       0,           0 },
     { "Spotify",    NULL,       NULL,       1 << 8,       0,           0 },
     { "Mailspring", NULL,       NULL,       1 << 7,       0,           0 },
-    { "St",         NULL,       "vifm",     1 << 4,       0,           0 },
 };
 
 /* layout(s) */
