@@ -1,5 +1,15 @@
-#!/bin/sh
+#!/bin/bash
 sh ~/.xsession
+
+# Get list of desktop files in ~/.config/autostart
+mapfile -t dfiles < <(find "$HOME/.config/autostart" -iname '*.desktop')
+
+# Launch all desktop files
+for f in "${dfiles[@]}"; do
+    name="${f#$HOME/.config/autostart/}"
+    gtk-launch "$name" &
+done
+
 while true; do 
     dwm 2> ~/.dwm.log
 done
