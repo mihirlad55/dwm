@@ -10,6 +10,6 @@ for f in "${dfiles[@]}"; do
     gtk-launch "$name" &
 done
 
-while true; do 
-    dwm 2> ~/.dwm.log
+while true; do
+    dwm 2>&1 | while read line; do echo "[$(date "+%b %d %T")] $line" >> ~/.dwm.log; done
 done
