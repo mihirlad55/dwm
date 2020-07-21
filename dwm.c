@@ -334,6 +334,7 @@ static Monitor *mons, *selmon;
 static Window root, wmcheckwin;
 
 static xcb_connection_t *xcon;
+#include "gaplessgrid.c"
 
 /* configuration, allows nested code to access above variables */
 #include "config.h"
