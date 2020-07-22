@@ -2,4 +2,4 @@
 *.o
 config.h
 dwm
-
+dwm-msg
