@@ -1654,8 +1654,10 @@ restack(Monitor *m)
 	XWindowChanges wc;
 
 	drawbar(m);
-	if (!m->sel)
+	if (!m->sel) {
+		XSync(dpy, False);
 		return;
+	}
 	if (m->sel->isfloating || !m->lt[m->sellt]->arrange)
 		XRaiseWindow(dpy, m->sel->win);
 	if (m->lt[m->sellt]->arrange) {
@@ -2204,7 +2206,7 @@ toggleview(const Arg *arg)
 	updatecurrentdesktop();
 	selmon->tagset[selmon->seltags] = newtagset;
 
-	if (newtagset == ~0) {
+	if (newtagset == ~0 || !newtagset) {
 		selmon->pertag->prevtag = selmon->pertag->curtag;
 		selmon->pertag->curtag = 0;
 	}
