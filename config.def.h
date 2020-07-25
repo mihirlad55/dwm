@@ -157,6 +157,7 @@ static IPCCommand ipccommands[] = {
   IPCCOMMAND(  toggletag,           1,      {ARG_TYPE_UINT}   ),
   IPCCOMMAND(  tagmon,              1,      {ARG_TYPE_UINT}   ),
   IPCCOMMAND(  focusmon,            1,      {ARG_TYPE_SINT}   ),
+  IPCCOMMAND(  focusmonnum,         1,      {ARG_TYPE_UINT}   ),
   IPCCOMMAND(  focusstack,          1,      {ARG_TYPE_SINT}   ),
   IPCCOMMAND(  zoom,                1,      {ARG_TYPE_NONE}   ),
   IPCCOMMAND(  spawn,               1,      {ARG_TYPE_PTR}    ),
